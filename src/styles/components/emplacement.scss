@@ -1,0 +1,81 @@
+.emplacements {
+    .bloc_title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            margin: 10px 20px;
+        }
+
+        .line__title {
+            width: 20%;
+        }
+    }
+
+    .subtitle_emplacement {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px 20px 0;
+        font-weight: 600;
+        font-size: var(--font-size-h4);
+    }
+
+    .emplacement_cartes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .maps {
+        width: 310px;
+        height: 310px;
+        margin: 20px 20px 180px 20px;
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 40%;
+            height: 480px;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            height: 600px;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nom_dunns {
+            font-size: var(--font-size-content);
+            font-weight: bold;
+            font-size: var(--font-size-h4);
+            margin: 10px 0 0 0;
+        }
+
+        .adresse_dunns {
+            margin-top: 0;
+        }
+
+        .bouton_maps {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin: 20px 0;
+            a {
+                padding: 10px 20px;
+                border-radius: 3px;
+                background-color: var(--color-accent);
+                cursor: pointer;
+                transition: 0.4s all;
+
+                &:hover {
+                    background-color: var(--color-button-hover);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+footer {
+    width: 100%;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-footer);
+    padding: 18px 0 0 0;
+    height: fit-content;
+    background-color: var(--color-bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .top__footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: $breakpoint-md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .footer__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: $breakpoint-md) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            font-size: 14px;
+        }
+    }
+
+    .footer__icons {
+        color: var(--color-accent);
+        order: 2;
+        margin: 0 0 38px 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            order: 3;
+            flex-direction: row;
+        }
+    }
+
+    .footer__nav {
+        order: 3;
+
+        a {
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        a:hover {
+            background-color: var(--color-accent);
+        }
+    }
+    .footer__ul {
+        margin: 0 0 38px 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin: 0 0 10px 0;
+
+            @media screen and (min-width: $breakpoint-md) {
+                padding: 0 52px 0 0;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            order: 2;
+            flex-direction: row;
+        }
+    }
+
+    img {
+        order: 1;
+        width: 155px;
+        height: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .bottom__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 4;
+    }
+
+    .footer__language {
+        margin: 0 0 20px 0;
+    }
+
+    .footer__copyright {
+        font-size: var(--font-size-copyright);
+        margin: 0 0 5px 0;
+    }
+}

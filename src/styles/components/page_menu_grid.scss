@@ -1,0 +1,78 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.menu__container {
+    width: 90%;
+    @media screen and (min-width: $breakpoint-md) {
+        width: 80%;
+    }
+}
+
+.menu__desc {
+    padding: 0 0 10px 0;
+}
+
+.plates__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 80px);
+        grid-auto-flow: row;
+        grid-gap: 15px;
+    }
+}
+
+.case {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-bg-primary);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.1s $ease-in-cubic;
+}
+
+.case:hover {
+    background-color: var(--color-accent);
+}
+
+.case__top {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plate__title {
+    font-size: var(--font-size-menu-titles);
+    line-height: 0.95;
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price__info {
+    font-size: 12px;
+}
+
+.modal__box {
+    background-color: var(--color-bg-primary);
+
+    p {
+        color: white;
+    }
+}

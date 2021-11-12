@@ -1,0 +1,101 @@
+.hero {
+    background-color: var(--color-bg-secondary);
+    padding-bottom: 50px;
+    position: relative;
+
+    .img_hero {
+        background-image: url(../../assets/images/dunns_banner.jpg);
+        background-position-x: 93%;
+        background-repeat: no-repeat;
+        background-size: 900px;
+        min-height: 340px;
+        width: 100%;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            background-size: 100%;
+            min-height: 440px;
+
+            &.hero-menu {
+                min-height: 330px;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            background-size: cover;
+            min-height: 500px;
+
+            &.hero-menu {
+                min-height: 500px;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            min-height: 700px;
+
+            &.hero-menu {
+                min-height: 700px;
+            }
+        }
+    }
+
+    .concours {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            position: absolute;
+            top: 10%;
+            width: 45%;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin-left: 5%;
+            max-width: 450px;
+            top: 25%;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            top: 30%;
+            margin-left: 10%;
+            max-width: 30%;
+        }
+    }
+
+    h2 {
+        font-size: var(--font-size-h3);
+        margin: 0;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-h2);
+            width: 60%;
+        }
+    }
+
+    p {
+        width: 90%;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-content);
+            width: 80%;
+        }
+    }
+
+    a {
+        background-color: var(--color-accent);
+        padding: 10px 30px;
+        border-radius: 3px;
+        transition: 0.4s all;
+        font-weight: bold;
+
+        &:hover {
+            background-color: var(--color-button-hover);
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            padding: 15px 60px;
+        }
+    }
+}

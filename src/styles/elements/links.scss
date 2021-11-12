@@ -1,0 +1,30 @@
+/* ==========================================================================
+   LINKS / ELEMENTS
+   Style de base de tous les liens et bouton du site
+   ========================================================================== */
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--color-accent);
+        color: var(--color-white);
+    }
+}
+
+.button {
+    height: 47px;
+    width: 186px;
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: var(--color-button-hover);
+}

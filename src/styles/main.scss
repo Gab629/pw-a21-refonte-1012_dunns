@@ -1,0 +1,58 @@
+//FONTS
+// ici sont chargé les Google Fonts avec le @import
+
+// TOOLS
+// mixins et fonctions utilisés globalement dans le SCSS (Sass)
+@import 'tools/cover';
+
+// SETTINGS
+// Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
+@import 'settings/colors';
+@import 'settings/dimensions';
+@import 'settings/easing';
+@import 'settings/fonts';
+
+// GENERIC
+// Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
+@import 'generic/normalize';
+@import 'generic/reset';
+
+// ELEMENTS
+// Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
+@import 'elements/body';
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/wrapper';
+
+// COMPONENTS
+// Composants d'interface utilisateur spécifiques.
+// C’est là que la majorité de notre travail a lieu.
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/components/pagination/pagination.scss';
+@import '../../node_modules/swiper/components/scrollbar/scrollbar.scss';
+@import 'components/header';
+@import 'components/icons';
+@import 'components/modal';
+@import 'components/scrolly';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/food_menu';
+@import 'components/hero';
+@import 'components/section_viande_fumee';
+@import 'components/notre_histoire';
+@import 'components/intro-menu';
+@import 'components/page_menu_grid';
+@import 'components/contenu-texte';
+@import 'components/emplacement';
+@import 'components/entreprises';
+@import 'components/a-propos';
+@import 'components/commerce';
+@import 'components/scroll';
+@import 'components/formulaire';
+@import 'components/page_manquante';
+@import 'components/single.scss';
+
+// UTILITIES
+// Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
+@import 'utilities/accessibility';
+@import 'utilities/spacing';

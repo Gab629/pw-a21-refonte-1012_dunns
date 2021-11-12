@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dunn's Famous</title>
+
+        <link rel="stylesheet" href="https://use.typekit.net/zhg8qgc.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <div id="progressBar"></div>
+        <div id="progressBarContainer"></div>
+        <header class="header" data-component="Header">
+            <a href="index.html" class="header__brand">
+                <img src="assets/images/logo_dunns.png" alt="logo_dunns" />
+            </a>
+
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-primary__item"
+                            >Acceuil</a
+                        >
+                    </li>
+                    <li>
+                        <a href="menu.html" class="nav-primary__item">Menu</a>
+                    </li>
+                    <li class="nav-right">
+                        <a href="traiteur.html" class="nav-primary__item"
+                            >Traiteur</a
+                        >
+                    </li>
+                    <li>
+                        <a href="emplacements.html" class="nav-primary__item"
+                            >Emplacements</a
+                        >
+                    </li>
+                    <li>
+                        <a href="commerce.html" class="nav-primary__item"
+                            >Commerce</a
+                        >
+                    </li>
+                    <li>
+                        <a href="entreprises.html" class="nav-primary__item"
+                            >Entreprise</a
+                        >
+                    </li>
+                    <li>
+                        <a href="a-propos.html" class="nav-primary__item"
+                            >À propos</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="nav-primary__item">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="commander" href="#">Commandez en ligne</a>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="hero">
+            <div class="img_hero hero-menu"></div>
+        </div>
+
+        <section class="intro-menu">
+            <div class="intro__container">
+                <div class="intro__content wrapper">
+                    <div class="intro__title">
+                        <div class="line__title"></div>
+                        <h3 class="menu__section__title">Les menus</h3>
+                        <div class="line__title"></div>
+                    </div>
+                    <div class="intro__text">
+                        <div class="intro__subtitle">
+                            Notre menu a de tout pour tous.
+                        </div>
+                        <div class="intro__paragraph">
+                            <p>
+                                Depuis 1927, Dunn's vous sert sa recette
+                                familiale de poitrine de bœuf marinée et épicée
+                                à l'ancienne, mieux connue sous le nom de « Old
+                                fashion smoked meat », des biftecks, des
+                                hamburgers, des poutines « montréalaises », des
+                                soupes maison, des entrées originales et
+                                tellement plus.
+                            </p>
+                            <p>
+                                Chez Dunn's nous préparons notre viande fumée à
+                                l'ancienne avec un mélange d'épices exclusif.
+                                Nous marinons chaque poitrine de bœuf pendant
+                                six jours afin de bien préserver la richesse des
+                                saveurs à partir de notre fumoir jusqu'à votre
+                                assiette. Régalez-vous!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="intro__button">
+                        <a href="" class="button">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="swiper-container" data-component="Carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/gateau_grid.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="assets/images/milkshake_grid.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="assets/images/smoked_meat_grid.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu">
+            <div class="intro__button">
+                <a
+                    href="https://singleapp.com/menus/menu_121013_document.pdf?1553707334"
+                    target="blank"
+                    class="button"
+                    >Télécharger le menu</a
+                >
+            </div>
+            <!-- ========= section Entrées ========= -->
+            <div class="menu__container">
+                <div class="menu__title">
+                    <div class="line__title"></div>
+                    <h4 class="menu__section__title">Nos Entrées</h4>
+                    <div class="line__title"></div>
+                </div>
+                <div class="plates__grid">
+                    <div
+                        class="case"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal"
+                        data-modal-plate="Ailes de poulet"
+                        data-modal-text="Dorées et croustillantes. Servies avec la sauce de votre choix : BBQ Ranch, Buffalo, moutarde au miel, sauce thaï douce et épicée, mayo épicée."
+                    >
+                        <div class="case__top">
+                            <p class="plate__title">Ailes de Poulet</p>
+                            <div class="plates__price">
+                                <div class="price">
+                                    $10.50
+                                    <div class="price__info">(1/2 lbs)</div>
+                                </div>
+                                <div class="price">
+                                    $19.00
+                                    <div class="price__info">(1 lbs)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="case"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal"
+                        data-modal-plate="Egg Rolls au Smoked Meat"
+                        data-modal-text=""
+                    >
+                        <div class="case__top">
+                            <p class="plate__title">Egg Rolls au Smoked Meat</p>
+                            <div class="plates__price">
+                                <div class="price">$10.75</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="case"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal"
+                        data-modal-plate="Bâtonnets au Fromage"
+                        data-modal-text="Croustillants à lextérieur avec du mozzarella fondant à lintérieur. Servis avec salsa."
+                    >
+                        <div class="case__top">
+                            <p class="plate__title">Bâtonnets au Fromage</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="case"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal"
+                        data-modal-plate="Pelures de Pommes de Terre"
+                        data-modal-text="2 pelures remplies de fromage fondant, déchalotes et de bacon. Servies avec de la crème sure."
+                    >
+                        <div class="case__top">
+                            <p class="plate__title">
+                                Pelures de Pommes <br />
+                                de Terre
+                            </p>
+                            <div class="plates__price">
+                                <div class="price">
+                                    $7.50
+                                    <div class="price__info">bacon</div>
+                                </div>
+                                <div class="price">
+                                    $3.00
+                                    <div class="price__info">smoked meat</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="case"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal"
+                        data-modal-plate="Egg Rolls au Smoked Meat"
+                        data-modal-text="Doigts de poulet tendres et croustillants servis avec frites maison et sauce aux prunes ou moutarde au miel."
+                    >
+                        <div class="case__top">
+                            <p class="plate__title">Doigts de Poulet</p>
+                            <div class="plates__price">
+                                <div class="price">$13.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="case"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal"
+                        data-modal-plate="Egg Rolls au Smoked Meat"
+                        data-modal-text="2 pelures de pommes de terre, 4 egg rolls au smoked meat et 4 bâtonnets de fromage."
+                    >
+                        <div class="case__top">
+                            <p class="plate__title">Combo double "D"</p>
+                            <div class="plates__price">
+                                <div class="price">$18.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="case"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal"
+                        data-modal-plate='Combo Double "D" Deluxe'
+                        data-modal-text="2 pelures de pommes de terre, 6 egg rolls au smoked meat, 6 bâtonnets de fromage et rondelles doignon."
+                    >
+                        <div class="case__top">
+                            <p class="plate__title">Combo Double "D" Deluxe</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========= section Accompagnements ========= -->
+
+                <div class="menu__title">
+                    <div class="line__title"></div>
+                    <h4 class="menu__section__title">Accompagnements</h4>
+                    <div class="line__title"></div>
+                </div>
+                <div class="plates__grid">
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">
+                                Frites Fraîchement Coupées
+                            </p>
+                            <div class="plates__price">
+                                <div class="price">$4.25</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Patates Douces</p>
+                            <div class="plates__price">
+                                <div class="price">$10.75</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Salade de Chou</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Cornichons</p>
+                            <div class="plates__price">
+                                <div class="price">$7.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Karnatzel</p>
+                            <div class="plates__price">
+                                <div class="price">$13.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Piments</p>
+                            <div class="plates__price">
+                                <div class="price">$18.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Pain à l'Ail</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Pain à l'Ail Gratiné</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Rondelles d'Oignon</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Latkas</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========= section Poutines ========= -->
+
+                <div class="menu__title">
+                    <div class="line__title"></div>
+                    <h4 class="menu__section__title">Poutines</h4>
+                    <div class="line__title"></div>
+                </div>
+
+                <div class="menu__desc">
+                    Toutes nos poutines sont servies avec du fromage en grains
+                    frais et des frites fraîchement coupées
+                </div>
+
+                <div class="plates__grid">
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Québéquoise</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Italienne</p>
+                            <div class="plates__price">
+                                <div class="price">$10.75</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Hot Dog</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Toute Garnie</p>
+                            <div class="plates__price">
+                                <div class="price">$7.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Le Hot Chicken(Galvaude)</p>
+                            <div class="plates__price">
+                                <div class="price">$13.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Général Tao</p>
+                            <div class="plates__price">
+                                <div class="price">$18.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Buffalo</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Mexicaine</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Dunn's Famous</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Dunn's Italienne</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========= section À VOTRE GOÛT ========= -->
+
+                <div class="menu__title">
+                    <div class="line__title"></div>
+                    <h4 class="menu__section__title">À Votre Goût</h4>
+                    <div class="line__title"></div>
+                </div>
+
+                <div class="menu__desc">
+                    Choisissez parmi les ingredients suivants pour créer une
+                    poutine à votre goût.
+                </div>
+
+                <div class="plates__grid">
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Extra Fromage</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">
+                                Champignons Sauté <br />
+                                et Oignons
+                            </p>
+                            <div class="plates__price">
+                                <div class="price">$10.75</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Hot Dog</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Bacon</p>
+                            <div class="plates__price">
+                                <div class="price">$7.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Boeuf Haché</p>
+                            <div class="plates__price">
+                                <div class="price">$13.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Smoked Meat</p>
+                            <div class="plates__price">
+                                <div class="price">$18.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Poulet Grillé</p>
+                            <div class="plates__price">
+                                <div class="price">$22.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========= section SOUPES ========= -->
+
+                <div class="menu__title">
+                    <div class="line__title"></div>
+                    <h4 class="menu__section__title">Soupes</h4>
+                    <div class="line__title"></div>
+                </div>
+
+                <div class="plates__grid">
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Matzoh Ball</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Lousiane</p>
+                            <div class="plates__price">
+                                <div class="price">$10.75</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Soupe à l'Oignon Gratiné</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========= section Salades ========= -->
+
+                <div class="menu__title">
+                    <div class="line__title"></div>
+                    <h4 class="menu__section__title">Salades</h4>
+                    <div class="line__title"></div>
+                </div>
+
+                <div class="plates__grid">
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Maison</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">César</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Méditerranéenne</p>
+                            <div class="plates__price">
+                                <div class="price">$10.75</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Général Tao</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Cobb</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Poulet Thaï</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Poulet Buffalo "Ranch"</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <div class="case__top">
+                            <p class="plate__title">Poulet Moutarde au Miel</p>
+                            <div class="plates__price">
+                                <div class="price">$10.50</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="intro__button">
+            <a
+                href="https://singleapp.com/menus/menu_121013_document.pdf?1553707334"
+                target="blank"
+                class="button"
+                >Télécharger le pdf</a
+            >
+        </div>
+
+        <footer>
+            <div class="footer__content wrapper" data-scrolly="Drop">
+                <div class="top__footer">
+                    <div class="footer__logo">
+                        <img
+                            src="assets/images/logo_dunns.png"
+                            alt="logo Dunns"
+                        />
+                    </div>
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="index.html">Franchisage</a></li>
+                            <li><a href="profile.html">Confidentialité</a></li>
+                            <li><a href="#">Conditions </a></li>
+                            <li>
+                                <a href="programmation.html"
+                                    >Conditions de commande</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__icons">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="bottom__footer">
+                    <div class="footer__language">English</div>
+                    <div class="footer__copyright">
+                        Copyright © 2021 TouchBistro Inc.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <template id="tpl-modal">
+            <div class="modal modal-menu">
+                <div class="modal__scrim js-scrim"></div>
+                <div class="modal__box">
+                    <div class="modal__content">
+                        <h2>{{plate}}</h2>
+                        <p>{{text}}</p>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </body>
+</html>

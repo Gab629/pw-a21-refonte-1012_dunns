@@ -1,0 +1,116 @@
+.intro-menu {
+    height: 500px;
+    width: 100%;
+    background-color: var(--color-bg-primary);
+    margin: 30px 0 30px 0;
+    
+    @media screen and (max-width: 529px) {
+        height: 120%;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        height: 580px;
+    }
+}
+
+.intro__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    
+    
+}
+
+.intro__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $breakpoint-md) {
+        width: 50%;
+    }
+}
+
+.swiper-container {
+    display: none;
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: block;
+        width: 50%;
+        height: 100%;
+        background-color: coral;
+
+        img {
+           object-fit: cover;
+           height: 100%;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        width: 70%;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: white solid 4px;
+}
+
+.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    border: white solid 4px;
+    background-color: var(--color-white);
+    transition: 0.5s;
+}
+
+.intro__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .line__title {
+        width: 20%;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        justify-content: flex-start;
+        .menu__section__title {
+            margin-right: 20px;
+        }
+        .line__title:nth-child(1) {
+            display: none;
+        }
+    }
+}
+
+.intro__text {
+    width: 90%;
+
+    .intro__subtitle {
+        font-size: var(--font-size-footer);
+        font-weight: thin;
+        margin-bottom: 10px;
+    }
+
+    .intro__paragraph {
+        font-size: var(--font-size-nav);
+    }
+}
+
+.intro__button {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}

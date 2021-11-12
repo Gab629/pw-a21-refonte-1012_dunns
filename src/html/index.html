@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dunn's Famous</title>
+
+        <link rel="stylesheet" href="https://use.typekit.net/zhg8qgc.css" />
+        <link rel="stylesheet" href="../../dist/styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div id="progressBar"></div>
+        <div id="progressBarContainer"></div>
+
+        <header class="header" data-component="Header">
+            <a href="index.html" class="header__brand">
+                <img src="assets/images/logo_dunns.png" alt="logo_dunns" />
+            </a>
+
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-primary__item"
+                            >Acceuil</a
+                        >
+                    </li>
+                    <li>
+                        <a href="menu.html" class="nav-primary__item">Menu</a>
+                    </li>
+                    <li>
+                        <a href="traiteur.html" class="nav-primary__item"
+                            >Traiteur</a
+                        >
+                    </li>
+                    <li>
+                        <a href="emplacements.html" class="nav-primary__item"
+                            >Emplacements</a
+                        >
+                    </li>
+                    <li>
+                        <a href="commerce.html" class="nav-primary__item"
+                            >Commerce</a
+                        >
+                    </li>
+                    <li>
+                        <a href="entreprises.html" class="nav-primary__item"
+                            >Entreprise</a
+                        >
+                    </li>
+                    <li>
+                        <a href="a-propos.html" class="nav-primary__item"
+                            >À propos</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="nav-primary__item">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="commander" href="#">Commandez en ligne</a>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="hero">
+            <div class="img_hero"></div>
+            <div class="concours">
+                <h2>Participez à notre concours</h2>
+                <p>
+                    Participez pour une chance de gagner un certificat-cadeau de
+                    50$.
+                </p>
+                <a href="">En savoir plus</a>
+            </div>
+        </div>
+
+        <section class="food-menu">
+            <div class="menu__title">
+                <div class="line__title"></div>
+                <h3 class="menu__section__title">Notre Menu</h3>
+                <div class="line__title"></div>
+            </div>
+
+            <div class="menu__grid">
+                <a href="" class="case1">
+                    <div class="grid__element element1">
+                        <p>Viandes Fumées</p>
+                    </div>
+                </a>
+                <a href="" class="case2">
+                    <div class="grid__element element2"><p>Entrées</p></div>
+                </a>
+                <a href="" class="case3">
+                    <div class="grid__element element3"><p>Repas</p></div>
+                </a>
+                <a href="" class="case4">
+                    <div class="grid__element element4"><p>Breuvages</p></div>
+                </a>
+                <a href="" class="case5">
+                    <div class="grid__element element5"><p>Desserts</p></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="viande-fumee">
+            <div class="viande__container">
+                <div class="viande__content wrapper">
+                    <div class="viande__title">
+                        <div class="line__title"></div>
+                        <h3 class="menu__section__title">Viande Fumée</h3>
+                        <div class="line__title"></div>
+                    </div>
+                    <div class="viande__text">
+                        <div class="viande__subtitle">
+                            La viande fumée traditionnelle, seulement disponible
+                            à Montréal
+                        </div>
+                        <div class="viande__paragraph">
+                            Depuis que Myer Dunn a ouvert son premier restaurant
+                            à Montréal en 1927, Dunn offre leur remarquablement
+                            délicieux viande fumée à toute personne assez
+                            chanceuse de l'essayer. Ses sandwiches appétissants
+                            ont vite attiré l'attention du public, et bientôt le
+                            nom Dunn et le restaurant Dunn’s Famous sont devenus
+                            synonymes du meilleur viande fumée à Montréal.
+                        </div>
+                    </div>
+                    <div class="viande__button">
+                        <a href="" class="button">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="swiper-container" data-component="Carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/gateau_grid.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="assets/images/milkshake_grid.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="assets/images/smoked_meat_grid.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="notre-histoire">
+            <div class="bloc-texte">
+                <div class="histoire-wrapper">
+                    <div class="histoire-texte">
+                        <div class="histoire__title">
+                            <div class="line__title"></div>
+                            <h3>Notre histoire</h3>
+                            <div class="line__title"></div>
+                        </div>
+                        <h4>L’un des meilleurs restaurants à Montréal.</h4>
+                        <p>
+                            Myer Dunn a fondé le meilleur restaurant à Montréal
+                            Dunn’s Famous en 1927. Grace à ses recettes uniques
+                            et ses exigences de qualité élevées, Dunn’s Famous
+                            est devenu un endroit favori parmi les résidents et
+                            les visiteurs de Montréal et l’est toujours.
+                        </p>
+                        <p>
+                            Aujourd'hui, nous continuons fièrement sa tradition
+                            d'excellence en offrant une variété d'options, y
+                            compris poutines, hamburgers, soupes, salades, wraps
+                            et une foule d'autres aliments succulents qui feront
+                            jouir vos papilles. <span class="plus">[...]</span>
+                        </p>
+                        <div class="bouton-histoire">
+                            <a href="">En savoir plus</a>
+                        </div>
+                    </div>
+                    <img src="assets/images/restaurant.jpg" alt="" />
+                </div>
+            </div>
+            <div class="bloc-texte">
+                <div class="histoire-wrapper">
+                    <img src="assets/images/rue.jpg" alt="" />
+                    <div class="histoire-texte">
+                        <p>
+                            La seule chose qui est restée la même tout au long
+                            des années est notre engagement d’offrir des
+                            recettes authentiques préparées à partir des
+                            meilleurs ingrédients disponibles. C’est cet
+                            engagement indéfectible qui nous a permis de rester
+                            un restaurant de base à Montréal.
+                        </p>
+                        <p>
+                            Chaque emplacement et chaque employé est dédié à
+                            offrir la qualité et le service pour lesquels Dunn,
+                            le meilleur restaurant à Montréal, est reconnu- « De
+                            la bonne bouffe pour du bon monde. »
+                        </p>
+                        <p>
+                            Bien que certaines choses ne changeront jamais,
+                            transmettre la tradition de Dunn de génération en
+                            génération est un changement que nous embrassons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bloc-texte">
+                <div class="histoire-wrapper">
+                    <div class="histoire-texte">
+                        <p>
+                            Ayant récemment accepté le rôle de vice-président de
+                            Dunn, l’arrière-petit-fils de Myer Dunn, Andrew
+                            Kligman, est prêt à relever le défi et préserver
+                            l’histoire et traditions d’un des meilleurs
+                            restaurants à Montréal, tout en restant puisé dans
+                            l'industrie en évolution rapide d'aujourd'hui.
+                        </p>
+                        <p>
+                            Avec de nombreux emplacements Dunn, nous sommes
+                            éparpillés un peu partout dans la ville afin que
+                            vous puissiez déguster notre fameux viande fumée
+                            ainsi que toute une gamme d'autres aliments
+                            savoureux de notre menu, d’où vous vous trouvez.
+                            Nous vous invitons à vous, vos amis et votre famille
+                            à visiter un de nos emplacements et vivre une
+                            expérience gastronomique dans un des meilleur
+                            restaurant délis à Montréal.
+                        </p>
+                        <p>Bon Appétit!</p>
+
+                        <p>
+                            Propriétaire & Keeper (ou présente conservateur) de
+                            l'héritage de la famille de notre Dunn's.
+                        </p>
+                    </div>
+                    <img src="assets/images/proprietaire.jpg" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="menu__title">
+                <div class="line__title"></div>
+                <h3 class="menu__section__title">Nos Emplacements</h3>
+                <div class="line__title"></div>
+            </div>
+            <iframe
+                src="https://snazzymaps.com/embed/345463"
+                width="100%"
+                height="600px"
+                style="border: none"
+            ></iframe>
+        </section>
+
+        <footer>
+            <div class="footer__content wrapper" data-scrolly="Drop">
+                <div class="top__footer">
+                    <div class="footer__logo">
+                        <img
+                            src="assets/images/logo_dunns.png"
+                            alt="logo Dunns"
+                        />
+                    </div>
+                    <nav class="footer__nav">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="footer__a"
+                                    >Franchisage</a
+                                >
+                            </li>
+                            <li>
+                                <a href="profile.html" class="footer__a"
+                                    >Confidentialité</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="footer__a">Conditions </a>
+                            </li>
+                            <li>
+                                <a href="programmation.html" class="footer__a"
+                                    >Conditions de commande</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__icons">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="bottom__footer">
+                    <div class="footer__language">English</div>
+                    <div class="footer__copyright">
+                        Copyright © 2021 TouchBistro Inc.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
