@@ -1,5 +1,10 @@
 <footer>
             <div class="footer__content wrapper" data-scrolly="Drop">
+
+<?php 
+    echo do_shortcode( '[gravityform id="3"]' );
+ ?>
+
                 <div class="top__footer">
                     <div class="footer__logo">
                         <img
